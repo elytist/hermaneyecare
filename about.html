@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Herman Eye Care</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="jquery-3.1.1.js"></script>
+
+    <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
+    <link href="assets/css/ct-paper.css" rel="stylesheet"/>
+    <link href="assets/css/demo.css" rel="stylesheet" />
+
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="jquery-3.1.1.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    
+<link rel="icon"
+          type="image/png"
+          href="/assets/img/eyelogo.png" />
+</head>
+
+<style>
+    body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  background-color: #f2f2f2;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  position: relative;
+  opacity: 0.6;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("assets/img/boat1.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("assets/img/eyes.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("assets/img/store.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("assets/img/photo1.png");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+  margin-top: 50px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+}
+
+body, html, .main {
+    height: 100%;
+}
+
+
+.navbar-bootsnipp {
+    background-color: rgb(255, 255, 255);
+	border-color: rgb(95, 176, 228);
+	border-radius: 0px;
+	margin-bottom: 0px;
+	z-index: 100;
+}
+.navbar-bootsnipp:nth-of-type(2) {
+	border-top-width: 1px;
+	z-index: 50
+}
+
+.navbar-bootsnipp.affix-top {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp.affix {
+	top: 0px;
+	width: 100%;
+}
+.navbar-bootsnipp .navbar-toggle .icon-bar {
+	background-color: rgb(95, 176, 228);
+}
+
+.navbar-bootsnipp .navbar-nav > li > a {
+	border: 0px solid rgb(95, 176, 228);
+	color: rgb(120, 120, 120);
+	padding: 15px 14px;
+}
+
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > input,
+.navbar-bootsnipp .navbar-nav > li > form > .input-group > .input-group-btn > .btn {
+	border-radius: 0px;
+}
+
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+	border-left-width: 5px;
+	color: rgb(95, 176, 228);
+	padding-left: 10px;
+}
+.navbar-bootsnipp .navbar-nav > li.disabled > a {
+	color: rgb(200, 200, 200);
+}
+
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu {
+	border-radius: 0;
+	margin-right: -1px;
+	min-width: 220px;
+	padding: 0px;
+}
+.navbar-bootsnipp .navbar-nav > li:not(.dropdown-right) > .dropdown-menu {
+	left: 0px;
+	margin-left: -1px;
+	right: auto;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a {
+	border-left: 0px solid rgb(95, 176, 228);
+	color: rgb(120, 120, 120);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 10px 20px;
+	white-space: nowrap;
+}
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li.active > a, 
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a:hover, 
+.navbar-bootsnipp .navbar-nav > li > .dropdown-menu > li > a:focus {
+	background-color: rgb(245, 245, 245);
+	border-left-width: 5px;
+	padding-left: 15px;
+}
+
+.navbar .bootsnipp-profile > a {
+	padding-bottom: 9px; 
+	padding-top: 9px; 
+}
+.navbar .bootsnipp-profile > a > img {
+	border-radius: 50%;
+	width: 32px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu {
+	width: 320px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row {
+	padding: 5px 15px;
+}
+.navbar .bootsnipp-profile > .dropdown-menu > li > .row img {
+	width: 100%;
+}
+
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn.active,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:hover,
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn:focus {
+	padding: 14px 16px 14px 15px;
+}
+.navbar-bootsnipp .bootsnipp-search .input-group-btn > .btn-default {
+	background-color: rgb(245, 245, 245);
+}
+.nav-padding {
+	padding-top: 61px;
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-bootsnipp .navbar-brand {
+    	font-size: 20px;
+		height: auto;
+		padding: 15px 5px;
+	}
+	.navbar-bootsnipp .navbar-nav > li > a {
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).open > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled).active > a,
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:hover, 
+	.navbar-bootsnipp .navbar-nav > li:not(.disabled) > a:focus {
+		border-bottom-width: 5px;
+		border-left-width: 0px;
+		padding-bottom: 10px;
+		padding-left: 14px;
+	}
+
+	.navbar-bootsnipp .navbar-nav > li.disabled > a {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+#hermanlogo {
+    width: 100px;
+    height: 40px;
+    margin-top: -9px;
+}
+
+#bottom {
+	margin-top: -310px;
+}
+
+footer{
+	background-color: #000;
+}
+
+p {
+	text-align: center;
+}
+
+#affil {
+	font-size: 26px;
+	color: white;
+	
+}
+
+
+
+#nav {
+    width: 800px;
+}
+
+
+#mainpicture {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    height: -50px;
+    left: 50%;
+    position: absolute;
+
+}
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+.lib-panel img {
+    width: 80%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+#children {
+    margin-top:60px;
+    color:white;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+h5 {
+  font-size: 20px;
+}
+
+#main {
+    max-width: 70%;
+}
+
+#text {
+  font-size: 16px;
+  text-align: left;
+  color:black;
+}
+
+th {
+  color:black;
+  font-size: 18px;
+  font-weight:normal;
+}
+</style>
+
+<script>
+function myFunction() {
+    window.print();
+}
+
+$("#children").ready(function() {
+ $("filter").fadeOut('slow');   
+});
+
+
+
+</script>
+
+<body>
+<nav class="[ navbar navbar-fixed-top ][ navbar-bootsnipp animate ]" role="navigation">
+    	<div class="[ container-fluid ]">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="[ navbar-header ]">
+				<button type="button" class="[ navbar-toggle ]" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="[ sr-only ]">Toggle navigation</span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+					<span class="[ icon-bar ]"></span>
+				</button>
+				<div class="[ animbrand ]">
+					<a class="[ navbar-brand ][ animate ]" href="#"><img src="assets/img/hermanlogo.png" id=hermanlogo></a>
+				</div>
+			</div>
+
+		
+			<div class="container-fluid" id="nav">
+				<ul class="[ nav navbar-nav navbar-right ]">
+			
+					
+
+					
+					<li><a class="animate" href="index.html">Home</a></li>
+					<li class="active"><a href="about.html" class="[ animate ]">About</a></li>
+				
+			<!--		<li><a class="animate" href="services.html">Products & Services</a></li>-->
+					<li><a class="animate" href="contact.html">Contact Us</a></li>
+					<li class="testing"><a disabled><span class="glyphicon glyphicon-earphone"></span> 204-623-1400</a></li>
+					
+
+					
+					
+				
+
+					
+                    		</ul> 
+			</div>
+		</div>
+	</nav>
+	<div class="container-full">
+ <div class="container-full" id="children">
+    <img src="assets/img/store3.jpg" alt="..." class="center-block" width=100%>
+<br>
+              <!--  <p style="font-size: 30px; text-align:center;"><br><br><br>
+                <em>Ambiguity to Clarity</em>  <br><br></p><br> -->
+                
+         
+</div>
+	
+<div class="container-fluid" id="main">
+  <div class="jumbotron" style="background-color: white;">
+  <!--  <div class="page-header" style="text-align: center;"><h3>Our Mission</h3>
+    
+    </div>
+    <p style="text-align: center; font-size:20px">To provide excellent eye care services to the surrounding area of The Pas, MB.</p>-->
+    
+   <div class="page-header"><h3 style="text-align: center; margin-top: -40px">About</h3>
+    </div>
+    <p style="font-size:20px; color:black;">	Herman Eye Care is a local optometry centre that provides vision care services to a wide variety of clients in the The Pas area. Whether you are in need of regular eye examinations or treatment for a particular eye condition, our friendly staff can be of service.
+	<br><br>	At Herman Eye Care, we carry a number of vision correction products that cater to a variety of styles and ways of life. Stop in to learn more about our selection, and find the product that is right for you.
+We also dispense comfortable contacts matched to your specific prescription.
+<br>
+<br>Schedule an appointment to learn more about how we can take care of your vision.
+
+</p>
+     <div class="page-header"><h3 style="text-align: center;">Eye Care Services</h3>
+    </div>
+    <table align="center">
+      <tr>
+        <th>&bull;Complete Vision & Eye Care &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Glasses Adjustments & Repairs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Contact Lens Fitting&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Dry Eye and Glaucoma Assessments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Laser Co-Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Digital Retinal Imaging&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Non-prescription Sunglasses&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>&bull;Ocular Disease Management&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+      <tr>
+        <th>&bull;Emergency Appointments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+      </tr>
+    </table>
+  </div>
+  
+   <div class="jumbotron" style=" background-color: white;">
+<div class="page-header" style="text-align: center;"><h3>Optometrists</h3></div>
+   <!-- <div class="row">
+      <div class="col-md-6" style="text-align:center;">
+        <img src="assets/img/tra.jpg" style="max-width:100%;">
+        <h5 style="text-align: center; font-size: 26px;">Dr. Tra Sin</h5>
+      </div>
+      
+      <div class="col-md-6" style="text-align:center;">
+        <img src="assets/img/thuy.jpg" style="max-width:100%;">
+        <h5 style="text-align: center; font-size:26px;">Dr. Thuy Le</h5>
+      </div>
+      
+      
+    </div>-->
+    
+    <div class="no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-6">
+                           <!-- <img src="assets/img/chicken2.jpg"> -->
+                        </div>
+                        
+                            <div class="lib-row lib-header">
+                                <h3>Dr. Tra Sin</h3>
+                                <h5>Optometrist</h5>
+                                <p id="text">Dr. Tra Sin graduated with honours in 2007 from University of Waterloo with a Bachelor of Science and Doctor of Optometry degrees. During his seven years in university, Dr. Tra worked as a contact lens research assistant at the Centre for Contact Lens Research located in University of Waterloo. He completed his externship at the Scarborough Eye Clinic where he gained invaluable clinical experience in the treatment of ocular disease.
+
+Upon graduation, Dr. Tra wanted to practice in a small town setting and decided to move his family to The Pas.<br><br> In his spare time, Dr. Sin enjoys spending time with his wife and two young children as well as playing badminton.</p>
+                            </div></div></div></div><div class="no-padding lib-item" data-category="view">
+                <div class="lib-panel">
+                    <div class="row box-shadow">
+                        <div class="col-md-6">
+                           <!-- <img src="assets/img/chicken2.jpg"> -->
+                        </div>
+                        
+                            <div class="lib-row lib-header">
+                                <h3>Dr. Garry Herman</h3>
+                                <h5>Optometrist</h5>
+                                <p id="text">Dr. Herman is a native of The Pas. He attended the University of North Dakota and worked toward a Bachelor of Natural Science degree from 1989-1992. In 1996, he graduated from University of Waterloo School of Optometry. He completed his ocular pathology and therapeutics externship at Kaiser-Permanente in Washington DC. Upon graduation, Dr. Herman worked in Tisdale, SK for 3
+
+years. In 1999, Dr. Herman returned home to The Pas and opened the present practice with his wife Lavonne. He is qualified to prescribe therapeutics for the treatment and management of eye diseases.
+
+<br><br>Outside of optometry Dr. Herman is a grain farmer. He spent many years as a volunteer coach for in the local hockey association. He enjoys spending time with his wife and three children.</p>
+                            </div></div></div></div>
+    
+  </div>
+  
+  
+</div>
+
+    
+
+
+ <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
+  	<h3 style="text-align:center;">Professional Affiliations</h3><br>
+    <p id="affil"><a href="https://opto.ca/">The Canadian Association of Optometrists</a> | <a href="http://www.optometrists.mb.ca/">Manitoba Association of Optometrists</a> | <a href="http://www.eyerecommend.ca/">Eye Recommend Eye Care Network</a></p> 
+    <br><img src="assets/img/bright.jpg">
+    </div> 
+  
+</div>
+
+
+
+</body>
+
+
+</html>
